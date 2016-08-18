@@ -1,0 +1,44 @@
+.section-heading
+	display: block
+	position: relative
+	width: 100%
+	margin-bottom: 50px
+	+tablet-xl
+		margin-bottom: 40px
+	+tablet-l
+		margin-bottom: 30px
+	+tablet-s
+		margin-bottom: 25px
+	+phone-l
+		margin-bottom: 20px
+
+	h1
+		margin: 0
+		display: inline-block
+		border-bottom: 1px solid rgba(0,0,0,0.1)
+		position: relative
+		padding-bottom: 10px
+		text-transform: uppercase
+		padding-right: 50px
+		font-size: 32px
+		font-weight: 600
+		color: $black
+		+tablet-xl
+			font-size: 30px
+		+tablet-m
+			font-size: 26px
+		+tablet-s
+			font-size: 22px
+		+phone-l
+			font-size: 20px
+			padding-bottom: 7px
+
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			bottom: -2px
+			left: 0
+			height: 4px
+			width: 50px
+			background-color: $orange

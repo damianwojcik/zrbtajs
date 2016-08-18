@@ -1,0 +1,46 @@
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+li
+	margin: 0
+	padding: 0
+
+
+//list-checked
+ul.list--checked
+	padding-left: 50px
+	+tablet-xl
+		padding-left: 40px
+	+tablet-s
+		padding-left: 30px
+	+phone-s
+		padding-left: 20px
+
+	li
+		display: block
+		position: relative
+		margin-bottom: 5px
+		+tablet-s
+			margin-bottom: 3px
+		+phone-s
+			margin-bottom: 1px
+		&:before
+			position: absolute
+			content: "\ea10"
+			display: inline-block
+			left: -33px
+			top: 5px
+			color: $orange
+			font-family: 'icomoon' !important
+			speak: none
+			font-style: normal
+			font-weight: normal
+			font-variant: normal
+			text-transform: none
+			line-height: 1
+			+tablet-s
+				left: -25px
+			+phone-s
+				left: -20px

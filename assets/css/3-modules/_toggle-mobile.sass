@@ -1,0 +1,22 @@
+.toggle-mobile
+	display: none
+	position: absolute
+	cursor: pointer
+	right: 0
+	top: 0
+	padding: 26px 20px 23px 20px
+	width: 70px
+	height: 70px
+	z-index: 9999
+	&:hover
+		background-color: rgba(255,255,255,0.1)
+	+tablet-m
+		display: block
+
+.toggle-mobile__bar
+	display: block
+	height: 3px
+	width: 100%
+	background-color: $orange
+	&:nth-child(2)
+		margin: 5px 0

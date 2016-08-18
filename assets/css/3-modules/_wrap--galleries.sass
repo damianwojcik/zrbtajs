@@ -1,0 +1,85 @@
+.wrap--galleries
+	display: table
+	width: 100%
+
+	li
+		display: inline-block
+		float: left
+		width: 33.333%
+		padding: 0 20px
+		margin-bottom: 30px
+		+tablet-xl
+			padding: 0 10px
+			margin-bottom: 20px
+		+phone-xl
+			width: 50%
+		+phone-m
+			width: 100%
+			padding: 0
+
+		a
+			display: block
+			position: relative
+			height: 300px
+			border-radius: 5px
+			background-size: cover
+			background-position: center
+			background-repeat: no-repeat
+			overflow: hidden
+			+desktop-l
+				height: 250px
+			+desktop-s
+				height: 220px
+			+tablet-xl
+				height: 200px
+			+tablet-s
+				height: 180px
+			+phone-m
+				height: 200px
+			+phone-s
+				height: 180px
+			&:hover
+				.color-overlay
+					opacity: 1
+					transform: translateY(0)
+
+		.color-overlay
+			display: table
+			border-radius: 5px
+			opacity: 0
+			position: absolute
+			width: 100%
+			height: 100%
+			background-color: rgba(255,166,10,0.7)
+			padding: 30px
+			transform: translateY(100%)
+			+transition( all 0.4s ease 0s )
+
+			span
+				display: table-cell
+				vertical-align: middle
+				text-align: center
+				font-size: 30px
+				line-height: 1
+				color: $white
+				padding-right: 0
+				padding-bottom: 15px
+				+tablet-xl
+					font-size: 24px
+
+		h2
+			position: absolute
+			font-size: 18px
+			line-height: 1.2
+			font-weight: 600
+			bottom: 25px
+			left: 0
+			color: $white
+			width: 100%
+			padding: 0 25px
+			+tablet-l
+				padding: 0 20px
+				font-size: 16px
+			+phone-xl
+				bottom: 20px
+				font-size: 15px

@@ -1,0 +1,45 @@
+.header
+	width: 100%
+	position: fixed
+	top: 0
+	left: 0
+	height: 90px
+	z-index: 9999
+	background-color: $grey
+	color: #FFF
+	text-transform: uppercase
+	box-shadow: inset 0 -1px 0 0 lighten($orange, 20%)
+	+tablet-m
+		height: 70px
+
+	p
+		margin: 0
+
+	a
+		color: #FFF
+		&:hover
+			color: $orange
+
+	.logo
+		display: block
+		position: absolute
+		left: 20px
+		top: 13px
+		text-indent: -9999px
+		width: 256px
+		height: 60px
+		+tablet-m
+			width: 171px
+			height: 40px
+			top: 4px
+		+phone-xl
+			top: 9px
+
+		a
+			display: block
+			background-position: center
+			background-repeat: no-repeat
+			background-size: contain
+
+
+	

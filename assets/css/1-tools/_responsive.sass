@@ -1,0 +1,64 @@
+// Responsive resolutions
+// source: https://material.google.com/layout/responsive-ui.html#responsive-ui-breakpoints
+$desktop-xl: 1920px
+$desktop-l: 1600px
+$desktop-m: 1440px
+$desktop-s: 1280px
+$tablet-xl: 1024px
+$tablet-l: 960px
+$tablet-m: 840px
+$tablet-s: 720px
+$phone-xl: 600px
+$phone-l: 480px
+$phone-m: 400px
+$phone-s: 360px
+
+
+// Mixinins
+=desktop-xl
+	@media (max-width: #{$desktop-xl})
+		@content
+
+=desktop-l
+	@media (max-width: #{$desktop-l})
+		@content
+
+=desktop-m
+	@media (max-width: #{$desktop-m})
+		@content
+
+=desktop-s
+	@media (max-width: #{$desktop-s})
+		@content
+
+=tablet-xl
+	@media (max-width: #{$tablet-xl})
+		@content
+
+=tablet-l
+	@media (max-width: #{$tablet-l})
+		@content
+
+=tablet-m
+	@media (max-width: #{$tablet-m})
+		@content
+
+=tablet-s
+	@media (max-width: #{$tablet-s})
+		@content
+
+=phone-xl
+	@media (max-width: #{$phone-xl})
+		@content
+
+=phone-l
+	@media (max-width: #{$phone-l})
+		@content
+
+=phone-m
+	@media (max-width: #{$phone-m})
+		@content
+
+=phone-s
+	@media (max-width: #{$phone-s})
+		@content

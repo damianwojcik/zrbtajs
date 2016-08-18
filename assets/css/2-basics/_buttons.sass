@@ -1,0 +1,52 @@
+//globals for buttons
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.btn
+  display: inline-block
+  padding: 17px 30px
+  font-size: 14px
+  background-color: $grey-dark
+  text-transform: uppercase
+  color: #FFF
+  text-align: left
+  line-height: 1
+  white-space: nowrap
+  cursor: pointer
+  position: relative
+  font-weight: 600
+  +tablet-l
+    padding: 15px 25px
+    font-size: 13px
+  +tablet-s
+    font-size: 12px
+    padding: 12px 20px
+  +phone-xl
+    font-size: 11px
+
+  [class^="icon-"], [class*=" icon-"]
+    padding-right: 0
+    padding-left: 5px
+    font-size: 9px
+    line-height: 14px
+    position: relative
+    top: -1px
+    +tablet-l
+      font-size: 8px
+      line-height: 13px
+    +tablet-s
+      font-size: 7px
+      line-height: 12px
+    +phone-xl
+      font-size: 6px
+      line-height: 11px
+
+  &:hover,
+  &:active,
+  &:focus
+    color: #FFF
+    background-color: lighten($grey-dark, 5%)
+    outline: 0
+    text-decoration: none

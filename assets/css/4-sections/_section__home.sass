@@ -1,0 +1,265 @@
+.section__home
+	height: 100%
+	display: block
+	
+	h1
+		font-size: 40px
+		line-height: 1.2
+		margin: 0
+		+tablet-l
+			font-size: 30px
+		+tablet-s
+			font-size: 24px
+		+phone-xl
+			font-size: 22px
+		+phone-l
+			font-size: 18px
+		+phone-s
+			font-size: 16px
+		strong
+			display: block
+			font-size: 48px
+			font-weight: 700
+			+tablet-l
+				font-size: 38px
+			+tablet-s
+				font-size: 30px
+			+phone-xl
+				font-size: 28px
+			+phone-l
+				font-size: 24px
+			+phone-s
+				font-size: 22px
+
+	h2
+		font-size: 30px
+		line-height: 1.2
+		margin: 0
+		+desktop-s
+			font-size: 24px
+		+tablet-l
+			font-size: 20px
+		+tablet-m
+			height: 48px
+			overflow: hidden
+		+tablet-s
+			font-size: 18px
+			height: 43px
+		+phone-xl
+			font-size: 16px
+			height: 38px
+		+phone-l
+			font-size: 14px
+			height: 34px
+
+
+//BEGIN owl carousel
+.owl-carousel
+	position: relative
+	&:hover
+		.owl-prev,
+		.owl-next
+			opacity: 1
+
+	
+	.slide
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		height: 570px
+		+desktop-s
+			height: 500px
+		+tablet-m
+			height: 420px
+		+tablet-m
+			height: 380px
+		+phone-xl
+			height: 320px
+
+		.color-overlay
+			display: table
+			width: 100%
+			height: 100%
+			background-color: rgba(255,166,10,0.7)
+			position: relative
+			padding: 50px
+			+tablet-xl
+				padding: 40px
+			+tablet-l
+				padding: 30px
+			+tablet-s
+				padding: 25px
+			+phone-xl
+				padding: 20px
+
+			&:after
+				content: ''
+				display: block
+				width: 100%
+				height: 100%
+				position: absolute
+				left: 0
+				top: 0
+				background-color: rgba(0,0,0,0.1)
+
+
+		//wrap-mask
+		.wrap-mask
+			text-transform: uppercase
+			display: block
+			background-color: rgba(255,255,255,0.8)
+			max-width: 450px
+			padding: 35px
+			position: absolute
+			height: auto
+			bottom: 20%
+			left: 50px
+			z-index: 99
+			+desktop-m
+				max-width: 400px
+			+desktop-s
+				max-width: 350px
+				bottom: 23%
+				padding: 30px
+			+tablet-xl
+				max-width: 400px
+				left: 40px
+			+tablet-l
+				max-width: 280px
+			+tablet-m
+				bottom: 0
+				left: 0
+				right: 0
+				top: 0
+				margin: auto
+				max-height: 110px
+				text-align: center
+			+tablet-s
+				padding: 25px
+				max-height: 100px
+			+phone-xl
+				padding: 20px
+				max-width: 240px
+				max-height: 90px
+			+phone-l
+				max-height: 86px
+				max-width: 200px
+
+			.btn
+				position: absolute
+				bottom: -30px
+				left: 20px
+				+tablet-s
+					bottom: -20px
+				+phone-xl
+					bottom: -15px
+
+		//wrap
+		.wrap
+			display: block
+			position: absolute
+			text-transform: uppercase
+			left: 50px
+			top: 50px
+			color: #FFF
+			z-index: 99
+			+tablet-xl
+				left: 40px
+				top: 40px
+			+tablet-l
+				left: 30px
+				top: 30px
+			+tablet-m
+				position: relative
+				text-align: center
+				left: auto
+				top: auto
+				max-width: 90%
+				margin: auto
+			+phone-l
+				max-width: 95%
+			+phone-s
+				max-width: 100%
+				top: 15px
+
+	//nav
+	.owl-prev,
+	.owl-next
+		opacity: 0
+		position: absolute
+		top: 230px
+		text-indent: -9999px
+		width: 40px
+		height: 40px
+		border-radius: 5px
+		background-color: $navy
+		+transition( all 0.4s ease )
+		+desktop-s
+			top: 200px
+		+tablet-m
+			opacity: 1
+			top: 0
+			bottom: 0
+			margin: auto
+		+phone-l
+			width: 30px
+			height: 30px
+
+		&:hover
+			background-color: $orange
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			background-image: url('assets/img/slider-navigation-arrow.png')
+			background-repeat: no-repeat
+			background-position: center
+			background-size: cover
+			width: 18px
+			height: 18px
+			top: 12px
+			left: 12px
+			+phone-l
+				width: 12px
+				height: 12px
+				top: 10px
+				left: 10px
+
+	.owl-prev
+		left: 30px
+		+tablet-l
+			left: 20px
+
+	.owl-next
+		right: 30px
+		+tablet-l
+			right: 20px
+		&:after
+			transform: rotate(180deg)
+			left: 10px
+			+phone-l
+				left: 8px
+//END owl carousel
+
+
+//arrow-down
+a.arrow-down
+	position: absolute
+	bottom: 50px
+	left: 50%
+	margin-left: -20px
+	display: inline-block
+	background-image: url('assets/img/arrow-down.png')
+	background-size: cover
+	height: 40px
+	width: 40px
+	z-index: 999
+	+desktop-s
+		height: 30px
+		width: 30px
+		margin-left: -15px
+	+tablet-l
+		bottom: 30px
+	+phone-xl
+		width: 25px
+		height: 25px

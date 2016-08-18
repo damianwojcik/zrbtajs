@@ -1,0 +1,41 @@
+.section__about
+	background-color: $white
+	
+	.span-left
+		width: 55%
+		float: left
+		padding-right: 50px
+		+desktop-m
+			width: 60%
+			padding-right: 20px
+		+desktop-s
+			width: 100%
+			padding-right: 0
+
+		.intro
+			margin-bottom: 30px
+			+desktop-s
+				margin-bottom: 40px
+			+tablet-l
+				margin-bottom: 30px
+			+phone-s
+				margin-bottom: 20px
+
+	.span-right
+		width: 45%
+		float: left
+		padding-left: 30px
+		text-align: center
+		+desktop-m
+			width: 40%
+		+desktop-s
+			display: none
+
+		.link--img
+			display: block
+
+		img
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+			margin-bottom: 30px
+			display: block
+

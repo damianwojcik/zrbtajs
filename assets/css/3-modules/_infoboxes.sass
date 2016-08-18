@@ -1,0 +1,76 @@
+.infoboxes
+	
+	.infobox
+		+phone-l
+			display: table
+			position: absolute
+			max-width: 190px
+			overflow: hidden
+			left: calc(50% - 75px)
+
+	.row:not(:last-child)
+		margin-bottom: 20px
+		+phone-l
+			margin-bottom: 0
+	+phone-l
+		.span6
+			margin-bottom: 20px
+			position: relative
+			display: block
+			min-height: 30px
+
+	//wrap__ico
+	.wrap__ico
+		display: table
+		float: left
+		width: 60px
+		height: 60px
+		border-radius: 5px
+		background-color: rgba(0,0,0,0.1)
+		text-align: center
+		+tablet-s
+			width: 40px
+			height: 40px
+		+phone-l
+			width: 35px
+			height: 35px
+
+		span
+			display: table-cell
+			vertical-align: middle
+			padding-right: 0
+			color: $grey-dark
+			font-size: 26px
+			+tablet-s
+				font-size: 20px
+			+phone-l
+				font-size: 16px
+
+	//wrap__txt
+	.wrap__txt
+		display: table
+		float: left
+		margin: 0 20px
+		+phone-xl
+			margin: 0 15px
+		+phone-l
+			margin: 0 10px
+
+		h3
+			font-size: 18px
+			padding-top: 6px
+			font-weight: 600
+			+tablet-s
+				font-size: 15px
+				padding-top: 0
+			+phone-xl
+				font-size: 14px
+			+phone-l
+				font-size: 13px
+
+		p
+			font-size: 16px
+			+tablet-s
+				font-size: 13px
+			+phone-l
+				font-size: 12px
