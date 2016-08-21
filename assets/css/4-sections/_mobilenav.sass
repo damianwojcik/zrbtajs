@@ -1,0 +1,50 @@
+.mobile-navigation
+	@extend .sidebar
+	position: fixed
+	top: 70px
+	height: auto
+	padding-top: 0
+	width: 100%
+	box-shadow: none
+	z-index: 9999
+	display: none
+
+	.item__facebook
+		display: block
+		text-align: center
+
+	li
+		position: relative
+		border-bottom: 1px solid rgba(255,255,255,0.05)
+		&:last-child
+			border-bottom: 0
+		a
+			display: block
+			padding: 12px 0
+
+	[class^="icon-"], [class*=" icon-"]
+		position: relative
+		top: 3px
+		font-size: 18px
+		padding-left: 43%
+		+phone-l
+			padding-left: 40%
+			font-size: 18px
+		+phone-m
+			padding-left: 38%
+			font-size: 16px
+			top: 2px
+		+phone-s
+			padding-left: 35%
+			font-size: 14px
+
+	.item--facebook span
+		padding-left: 46.5%
+		font-size: 18px
+		+tablet-s
+			padding-left: 48%
+		+phone-m
+			padding-left: 46%
+		+phone-s
+			font-size: 16px
+			padding-left: 45%

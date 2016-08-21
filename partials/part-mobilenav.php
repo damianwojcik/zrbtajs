@@ -1,14 +1,14 @@
-<aside class="sidebar">
+<aside class="mobile-navigation">
 
 	<h2 class="offscreen">Panel boczny</h2>
 	
-	<nav class="primarynav">
+	<nav class="mobilenav">
 
-		<h2 class="offscreen">Nawigacja strony</h2>
+		<h2 class="offscreen">Nawigacja mobilna</h2>
 
 		<ul>
-			<li <?php if(is_home()){?>class="current-menu-item"<?php } ?>>
-				<a href="<?php if(!is_home()){ ?><?= SITE_URL; ?><?php echo '/'; } ?>#home">
+			<li>
+				<a href="<?php if(!is_home()){ ?><?= SITE_URL; ?><?php echo '/'; } ?>#">
 					<span class="icon-home"></span>Strona główna
 				</a>
 			</li>
@@ -22,23 +22,14 @@
 			</li>
 			<li <?php if(is_single()){?>class="current-menu-item"<?php } ?>>
 				<a href="<?php if(!is_home()){ ?><?= SITE_URL; ?><?php echo '/'; } ?>#galleries"><span class="icon-albums"></span>Galerie</a>
-			<!-- 	<ul class="primarynav__submenu">
-					<li>
-						<a href="#"><span class="icon-image"></span>Pierwsza galeria</a>
-					</li>
-					<li>
-						<a href="#"><span class="icon-image"></span>Druga galeria</a>
-					</li>
-					<li>
-						<a href="#"><span class="icon-image"></span>Trzecia galeria</a>
-					</li>
-				</ul> -->
-				<!-- END primarynav__submenu -->
 			</li>
 			<li>
 				<a href="<?php if(!is_home()){ ?><?= SITE_URL; ?><?php echo '/'; } ?>#contact">
 					<span class="icon-phone-book"></span>Kontakt
 				</a>
+			</li>
+			<li class="item--facebook">
+				<a href="https://www.facebook.com/ZRBTajsStanislaw/" target="_blank"><span class="icon-facebook2"></span></a>
 			</li>
 		</ul>
 		

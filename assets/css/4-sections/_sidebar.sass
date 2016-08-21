@@ -11,20 +11,11 @@
 	z-index: 999
 	box-shadow: inset -1px 0 0 lighten($orange, 20%)
 	+tablet-m
-		position: fixed
 		display: none
-		top: 70px
-		height: auto
-		padding-top: 0
-		width: 100%
-		box-shadow: none
-		z-index: 9999
 	a
 		color: #FFF
 		display: block
 		padding: 10px 35px 10px 20px
-		+tablet-m
-			padding: 12px 0
 		&:hover
 			color: $orange
 			background-color: rgba(255,255,255,0.05)
@@ -32,29 +23,11 @@
 
 //primarynav
 .primarynav
-
-	.item__facebook
-		display: none
-		span
-			padding: 0
-		+tablet-m
-			display: block
-			text-align: center
-
 	[class^="icon-"], [class*=" icon-"]
 		position: relative
 		top: 3px
 		font-size: 20px
 		padding-right: 10px
-		+tablet-m
-			padding-left: 43%
-		+phone-l
-			padding-left: 40%
-		+phone-m
-			padding-left: 38%
-		+phone-s
-			padding-left: 35%
-
 
 	.icon-chevron-right
 		transform: rotate(180deg)
@@ -72,12 +45,9 @@
 			width: 3px
 			height: 100%
 			background-color: $orange
-			+tablet-m
-				display: none
 		&.current-menu-item a
 			background-color: rgba(255,255,255,0.05)
-			+tablet-m
-				color: $orange
+
 //submenu
 .primarynav__submenu
 	display: none

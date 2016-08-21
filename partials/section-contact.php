@@ -19,7 +19,7 @@
 
 			<div class="wrap">
 
-				<div class="logo" style="background-image: url('<?php echo $logo['url']; ?>')"></div>
+				<div class="logo b-lazy" data-src="<?= THEME_URL; ?>/assets/img/logo-bw.png"></div>
 
 				<h2>Zakład Remontowo-Budowlany <br>Tajs&nbsp;Stanisław</h2>
 
@@ -63,6 +63,7 @@
 	<!-- END container -->
 
 	<div id="map"></div>
+
 
 </section>
 <!-- END section__services -->

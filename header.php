@@ -85,3 +85,9 @@
 	sidebar
 ================================================== -->
 <?php get_template_part("partials/part", "sidebar"); ?>
+
+
+<!-- =================================================
+	mobile-nav
+================================================== -->
+<?php get_template_part("partials/part", "mobilenav"); ?>

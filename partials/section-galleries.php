@@ -46,12 +46,14 @@
 				?>
 				
 					<li>
-						<a href="<?php echo $link; ?>" style="background-image: url('<?php echo $thumbnail; ?>')"
-						<?php if(!is_home()){ ?>rel="lightbox"<?php } ?>
+						<a href="<?php echo $link; ?>" <?php if(!is_home()){ ?>rel="lightbox"<?php } ?>
 						>
-							<div class="color-overlay">
-								<span class="icon-plus"></span>
-								<?php if(is_home()){?><h2><?php echo $title; ?></h2><?php } ?>
+							<div class="photo b-lazy" data-src="<?php 
+							if(is_home()){ echo $thumbnail; }else{ echo $link; } ?>">
+								<div class="color-overlay">
+									<span class="icon-plus"></span>
+									<?php if(is_home()){?><h2><?php echo $title; ?></h2><?php } ?>
+								</div>
 							</div>
 						</a>
 					</li>

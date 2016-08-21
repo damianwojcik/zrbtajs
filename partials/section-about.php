@@ -119,7 +119,9 @@
 		<!-- END wrap -->
 
 		<div class="span-right">
-			<a href="<?php echo $photo["url"]; ?>" class="link--img"><img src="<?php echo $photo["url"]; ?>" alt="<?php echo $photo["alt"]; ?>"></a>
+			<a href="<?php echo $photo["url"]; ?>" class="link--img" rel="lightbox">
+				<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo $photo["url"]; ?>" alt="<?php echo $photo["alt"]; ?>">
+			</a>
 
 			<a href="<?php echo $button_url; ?>" class="btn btn--gray"><?php echo $button_txt; ?><span class="icon-chevron-right"></a>
 		</div>
