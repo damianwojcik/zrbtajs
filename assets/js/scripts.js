@@ -28,13 +28,6 @@ jQuery(document).ready(function($){
     });
 
 
-    //animations
-	// $(".section:not(:first-child)").addClass("hideme").viewportChecker({
-	// 	classToAdd: 'visible animated fadeInDown',
-	// 	offset: 100
-	// });
-
-
     //init functions
     sidebar_functions();
     owl_init();
@@ -43,9 +36,9 @@ jQuery(document).ready(function($){
     lazy_load();
 
     if($("#map").length != 0) {
-    	initMap();
-	}
-    
+        initMap();
+    }
+
 
     if(windW >= 840 && $("body").hasClass("home")){
     	highlight_current_menu_item();
@@ -106,6 +99,15 @@ jQuery(document).ready(function($){
                 menu_container.css('display', '');
             }
         }
+
+        //hide menu when clicking outside it and header
+        $(document).click(function(event) {
+            if(!$(event.target).closest('.header').length && main_content.hasClass('sidebar--open')) {
+                main_content.toggleClass('sidebar--open');
+                menu_container.stop().slideToggle(400);
+            }
+        });
+
 
     }
 
@@ -169,7 +171,7 @@ jQuery(document).ready(function($){
 		$(window).scroll(function(){
 			var scrollTop = $(window).scrollTop();
 			var tops = [];
-			
+
 			$(selector).each(function(){
 				var top = $(this).position().top -90;
 				if(scrollTop > top) {
@@ -200,7 +202,7 @@ jQuery(document).ready(function($){
             map: map,
             title: 'Tu jesteśmy!'
         });
-        
+
     }
 
 

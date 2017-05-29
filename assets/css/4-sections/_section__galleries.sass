@@ -1,7 +1,7 @@
 .section__galleries
 	background-image: url('assets/img/parallax1.jpg')
 	background-size: cover
-	background-position: center
+	background-position: top
 	background-repeat: no-repeat
 	background-attachment: fixed
 
@@ -10,6 +10,16 @@
 		border-bottom: 1px solid rgba(255,255,255,0.4)
 
 .single .section__galleries
-	height: calc(100% - 90px)
-	+tablet-m
-		height: calc(100vh - 70px)
+	height: 100%
+	padding-top: 0
+
+	.section-heading
+		padding-top: 50px
+		+tablet-xl
+			padding-top: 40px
+		+tablet-l
+			padding-top: 30px
+		+tablet-s
+			padding-top: 25px
+		+phone-xl
+			padding-top: 20px

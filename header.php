@@ -70,10 +70,10 @@
 
 		<ul>
 			<li>
-				<a href="callto: <?php echo $phone; ?>"><span class="icon-phone"></span><?php echo $phone; ?></a>
+				<a href="callto: <?php echo $phone; ?>"><span class="icon-phone"></span><strong><?php echo $phone; ?></strong></a>
 			</li>
 			<li>
-				<a href="#map"><span class="icon-location"></span><span class="txt"><?php echo $location; ?></span></a>
+				<a href="<?php if(!is_home()){ ?><?= SITE_URL; ?><?php echo '/'; } ?>#map"><span class="icon-location"></span><span class="txt"><?php echo $location; ?></span></a>
 			</li>
 			<li class="item__facebook">
 				<a href="https://www.facebook.com/ZRBTajsStanislaw/" target="_blank"><span class="icon-facebook2"></span></a>

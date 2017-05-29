@@ -84,11 +84,6 @@
 		</div>
 		<!-- END span-left -->
 
-		<div class="span-right">
-					
-		</div>
-		<!-- END span-right -->
-
 	</div>
 	<!-- END container -->
 

@@ -29,6 +29,10 @@
 				<?php if(is_home()){ echo'Galerie'; }else { the_title(); } ?>
 			</h1>
 
+            <?php if(!is_home()) { ?>
+                <a href="<?= SITE_URL; ?>/#galleries" class="btn btn-default align-right">Wróć</a>
+            <?php } ?>
+
 		</header>
 
 			<ul class="wrap--galleries">
