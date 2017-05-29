@@ -8,7 +8,7 @@
 
 	function enqueue_styles() {
 		// load styles
-		wp_enqueue_style( 'site_styles', THEME_URL .'/style.css', '', NULL);
+		wp_enqueue_style( 'site_styles', THEME_URL .'/main.css', '', NULL);
 	}
 
 

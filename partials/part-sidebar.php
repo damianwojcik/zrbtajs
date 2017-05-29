@@ -22,18 +22,6 @@
 			</li>
 			<li <?php if(is_single()){?>class="current-menu-item"<?php } ?>>
 				<a href="<?php if(!is_home()){ ?><?= SITE_URL; ?><?php echo '/'; } ?>#galleries"><span class="icon-albums"></span>Galerie</a>
-			<!-- 	<ul class="primarynav__submenu">
-					<li>
-						<a href="#"><span class="icon-image"></span>Pierwsza galeria</a>
-					</li>
-					<li>
-						<a href="#"><span class="icon-image"></span>Druga galeria</a>
-					</li>
-					<li>
-						<a href="#"><span class="icon-image"></span>Trzecia galeria</a>
-					</li>
-				</ul> -->
-				<!-- END primarynav__submenu -->
 			</li>
 			<li>
 				<a href="<?php if(!is_home()){ ?><?= SITE_URL; ?><?php echo '/'; } ?>#contact">
