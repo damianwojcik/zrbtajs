@@ -49,7 +49,7 @@
 							
 					<div class="collage__photo collage__photo--large">
 						<a href="<?php echo $collage[0]['url']; ?>" rel="lightbox">
-							<img src="<?php echo $collage[0]['sizes']['large']; ?>" alt="<?php echo $collage[0]['alt']; ?>">
+							<img src="<?php echo $collage[0]['sizes']['medium']; ?>" alt="<?php echo $collage[0]['alt']; ?>">
 						</a>
 					</div>
 
@@ -57,19 +57,19 @@
 
 						<div class="collage__photo">
 							<a href="<?php echo $collage[1]['url']; ?>" rel="lightbox">
-								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo $collage[1]['sizes']['large']; ?>" alt="<?php echo $collage[1]['alt']; ?>">
+								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo $collage[1]['sizes']['medium']; ?>" alt="<?php echo $collage[1]['alt']; ?>">
 							</a>
 						</div>
 
 						<div class="collage__photo">
 							<a href="<?php echo $collage[2]['url']; ?>" rel="lightbox">
-								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo $collage[2]['sizes']['large']; ?>" alt="<?php echo $collage[2]['alt']; ?>">
+								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo $collage[2]['sizes']['medium']; ?>" alt="<?php echo $collage[2]['alt']; ?>">
 							</a>
 						</div>
 
 						<div class="collage__photo">
 							<a href="<?php echo $collage[3]['url']; ?>" rel="lightbox">
-								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo $collage[3]['sizes']['large']; ?>" alt="<?php echo $collage[3]['alt']; ?>">
+								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo $collage[3]['sizes']['medium']; ?>" alt="<?php echo $collage[3]['alt']; ?>">
 							</a>
 						</div>
 

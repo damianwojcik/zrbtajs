@@ -34,10 +34,7 @@ jQuery(document).ready(function($){
     smoothScroll();
     mobile_menu_functions();
     lazy_load();
-
-    if($("#map").length != 0) {
-        initMap();
-    }
+    initMap();
 
 
     if(windW >= 840 && $("body").hasClass("home")){
@@ -190,18 +187,24 @@ jQuery(document).ready(function($){
 	//google map
     function initMap() {
 
-        var myLatLng = {lat: 50.229748, lng: 18.946850};
+        var mapElement = document.getElementById('map');
 
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 11,
-            center: myLatLng
-        });
+        if (mapElement) {
 
-        var marker = new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-            title: 'Tu jesteśmy!'
-        });
+            var myLatLng = {lat: 50.229748, lng: 18.946850};
+
+            var map = new google.maps.Map(mapElement, {
+                zoom: 11,
+                center: myLatLng
+            });
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Tu jesteśmy!'
+            });
+
+        }
 
     }
 

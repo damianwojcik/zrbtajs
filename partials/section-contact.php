@@ -52,7 +52,7 @@
 
 			<div class="wrap">
 
-				<div class="fb-page" data-href="https://www.facebook.com/ZRBTajsStanislaw" data-tabs="timeline" data-height="320" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ZRBTajsStanislaw" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ZRBTajsStanislaw">Zakład Remontowo Budowlany Tajs Stanisław</a></blockquote></div>
+                <div class="fb-page" data-href="https://www.facebook.com/ZRBTajsStanislaw/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ZRBTajsStanislaw/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ZRBTajsStanislaw/">Zakład Remontowo Budowlany Tajs Stanisław</a></blockquote></div>
 
 			</div>
 
@@ -63,7 +63,6 @@
 	<!-- END container -->
 
 	<div id="map"></div>
-
 
 </section>
 <!-- END section__services -->
