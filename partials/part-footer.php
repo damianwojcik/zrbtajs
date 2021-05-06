@@ -1,6 +1,6 @@
 <footer class="footer">
 
-	<a href="http://damianwojcik.it/" target="_blank">made with love by &copy; damianwojcik.IT</a></p>
+	<a href="https://dwojcik.dev/" target="_blank">2021 &copy; dwojcik.dev</a></p>
 
 </footer>
 <!-- END footer -->
